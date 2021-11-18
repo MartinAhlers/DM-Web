@@ -1,0 +1,155 @@
+
+@import '_variables.scss';
+
+//header-------------------------->
+
+//header{
+//	background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ //   background-blend-mode: multiply,multiply;
+//}
+
+
+
+/* estilo lista menu de botones*/
+.dmLogo {
+	margin-top: 0.5em;
+	margin-left: 3.5em;
+	display: flex;
+}
+.listaHeader {
+	list-style-type: none;
+	justify-content: flex-end;
+	display: flex;
+	margin-right: 2em;
+	margin-top: 1em;
+	align-items: center;
+	li {
+		a {
+			display: flex;
+			margin: auto;
+			margin-right: 1.5em;
+			@extend %fontstyle;
+			font-size: 1.3em;
+			text-decoration: none;
+			padding: 0.5em 1em;
+			color: black;
+		}
+	}
+	
+	}
+
+
+
+
+@media screen and (max-width:990px){
+    .dmLogo{
+        margin-left: 1.5em;
+    }
+    .listaHeader{
+        justify-content: center;
+
+        li{
+			 width: 90vw;
+            a{
+			
+				margin-top: 0.5em;
+                justify-content: center;
+                border:none;
+                align-self: center;
+            }
+        }
+    }
+ 
+
+
+}
+
+@media screen  and (max-width:789px){
+    .dmLogo{
+        top: 0;
+        margin-bottom: 0.5em;
+        margin-right: 0;
+        align-self: flex-start;
+       width: 3em;
+       height: 3em;
+    }
+
+    .header{
+        height: 4em;
+       
+        .listaHeader{
+            justify-content: center;
+
+
+            li{
+                a{
+                    align-self: center;
+                    justify-content:center;
+                    width: 100%;
+                    border:none;
+					margin-top: 0.5em;
+                    
+
+
+                }
+            }
+        }
+
+
+    }
+  
+
+
+    
+}
+
+
+/* fin menu de botones */
+
+
+
+
+/*--menu mobile--*/
+
+@media screen and (max-width:1060px) {
+	.dmLogo {
+		margin-left: 1.5em;
+	}
+	.listaHeader {
+		justify-content: center;
+		li {
+			a {
+				justify-content: center;
+				width: 100%;
+				border: none;
+				align-self: center;
+			}
+		}
+	}
+}
+@media screen and (max-width:789px) {
+	.header {
+		height: 4em;
+	}
+	.listaHeader {
+		justify-content: center;
+		li {
+			a {
+				align-self: center;
+				justify-content: center;
+				width: 100%;
+				border: none;
+			}
+		}
+	}
+	.dmLogo {
+		top: 0;
+		margin-bottom: 0.5em;
+		margin-right: 0;
+		align-self: flex-start;
+		width: 3em;
+		height: 3em;
+	}
+}
+
+/* fin menu de botones */

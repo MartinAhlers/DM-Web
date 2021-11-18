@@ -1,0 +1,44 @@
+/*---fonts---*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+$roboto: 'Roboto Condensed', sans-serif;
+
+$fsize:1em;
+
+//mixins
+
+
+@mixin imgsize($maxwidth,$max-height) {
+    max-width: $maxwidth;
+    max-height: $max-height;
+    
+}
+
+//extend
+
+%center-content {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+%fontstyle{
+	font-family: $roboto;
+	font-style: normal;
+}
+
+// forma de grid productos 
+%grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-column-gap: 0.7em;
+	grid-row-gap: 0.7em;
+	margin: 0.5em;
+	background-color: rgb(233, 235, 236);
+}
+// hover imagenes
+%hoverimg{
+	transform: scale(1.01,1.01);
+	transition: .9s;
+}

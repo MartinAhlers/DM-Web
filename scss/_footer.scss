@@ -1,0 +1,42 @@
+@import '_variables.scss';
+// footer estilos----------------->
+.footer {
+	background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+	display: flex;
+	width: 100%;
+	@extend %fontstyle;
+	border-top: 0.3em solid black;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	div {
+		margin: 2em 2em 2em 6em;
+	}
+}
+.redes {
+	padding-top: 2em;
+	font-size: 1.2em;
+	text-align:left;
+	p {
+		margin-top: 1.5em;
+		img{
+			width: 2em;
+			height: 2em;
+		}
+	}
+}
+.infoLocal {
+	text-align: center;
+	p {
+		margin-top: 1.5em;
+		font-size: 1.2em;
+	}
+}
+
+.mapa {
+  margin: auto;
+    iframe{
+     position:relative;
+    }
+}

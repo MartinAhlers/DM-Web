@@ -1,0 +1,208 @@
+@import '_variables.scss';
+
+
+
+/*----VEHICULOS----*/
+
+.containerVeh {
+	@extend %grid;
+	div {
+		display: flex;
+		flex-direction: column;
+		@extend %center-content;
+		text-align: center;
+		font-size: 2em;
+		@extend %fontstyle;
+		align-self: center;
+		justify-self: center;
+		border: 3px solid black;
+		background-color: white;
+		&:hover {
+			@extend %hoverimg;
+		}
+	}
+	img {
+		@include imgsize(11em,10em);
+	}
+	p {
+		background-color: darkgrey;
+		width: 100%;
+	}
+}
+/*--------fin vehiculos-------------*/
+/*--------Accesorios------------*/
+
+.containerAcc {
+	@extend %grid;
+	div {
+		display: flex;
+		flex-direction: column;
+		@extend %center-content;
+		text-align: center;
+		font-size: 2em;
+		@extend %fontstyle;
+		align-self: center;
+		justify-self: center;
+		border: 3px solid rgb(245, 24, 24);
+		background-color: white;
+		&:hover {
+			@extend %hoverimg;
+		}
+	}
+	img {
+		@include imgsize(11em,10em);
+	}
+	p {
+		background-color: rgb(248, 99, 99);
+		width: 100%;
+	}
+}
+/* ---fin accesorios-----*/
+/*--------Repuestos------------*/
+
+.containerRep {
+	@extend %grid;
+	div {
+		display: flex;
+		flex-direction: column;
+		@extend %center-content;
+		text-align: center;
+		font-size: 2em;
+		@extend %fontstyle;
+		align-self: center;
+		justify-self: center;
+		border: 3px solid rgb(75, 87, 255);
+		background-color: white;
+		&:hover {
+			@extend %hoverimg;
+		}
+	}
+	img {
+		@include imgsize(11em,10em);
+	}
+	p {
+		background-color: rgb(105, 153, 241);
+		width: 100%;
+	}
+}
+
+
+/*----NOSOTROS---*/
+.grid {
+	@extend %fontstyle;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 2fr;
+	grid-column-gap: 1.2em;
+	padding: 0.5em;
+	margin: 1.7em;
+	border-top: 2px solid black;
+	justify-content: center;
+	align-items: center;
+}
+.grid-2 {
+	@extend %fontstyle;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 2fr;
+	grid-column-gap: 1.2em;
+	padding: 0.5em;
+	margin: 1.7em;
+	border-top: 2px solid black;
+	@extend %center-content;
+}
+.localImg {
+	width: 70%;
+}
+.item-1 {
+	&:hover {
+		transform: translate(10px, 20px);
+		transition: 1s;
+	}
+	text-align: left;
+}
+.item-4 {
+	&:hover {
+		transform: translate(-10px, 20px);
+		transition: 1s;
+	}
+	text-align: right;
+}
+.item-2 {
+	.item-3 {
+		align-self: center;
+		justify-self: center;
+	}
+}
+
+/* ---- filtro de categorias */
+.filtroMenu {
+	@extend %fontstyle;
+	display: inline;
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
+label {
+	@extend %fontstyle;
+	display: inline;
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
+
+/* contacto  ----*/
+.contenidoContacto {
+	background-color: silver;
+	padding-bottom: 2em;
+	@extend %fontstyle;
+}
+.contactoForm {
+	display: block;
+	margin: auto;
+	@extend %fontstyle;
+	font-size: 1.1em;
+	@extend %center-content;
+	text-align: center;
+	background-color: rgb(240, 240, 240);
+	div {
+		display: block;
+		padding-top: 0.8em;
+		padding-bottom: 0.8em;
+	}
+}
+.mensaje {
+	font-size: 1.3em;
+}
+
+
+
+
+/* ----- responsive grid --- */
+
+@media screen and (max-width:1115px) {
+	.containerVeh {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+	.containerAcc {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+	.containerRep {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+}
+@media screen and (max-width:760px) {
+	.containerVeh {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+	.containerAcc {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+	.containerRep {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+}

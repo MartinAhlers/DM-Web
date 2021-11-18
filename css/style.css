@@ -1,0 +1,531 @@
+/*---fonts---*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+.novedades img, .contactoForm, .grid-2, .containerRep div, .containerAcc div, .containerVeh div {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.novedades p, .tituloNovedades, .carousel-text, .contactoForm, .contenidoContacto, label, .filtroMenu, .grid-2, .grid, .containerRep div, .containerAcc div, .containerVeh div, .footer, .listaHeader li a {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+}
+
+.containerRep, .containerAcc, .containerVeh {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 0.7em;
+  grid-row-gap: 0.7em;
+  margin: 0.5em;
+  background-color: #e9ebec;
+}
+
+.novedades img:hover, .containerRep div:hover, .containerAcc div:hover, .containerVeh div:hover {
+  transform: scale(1.01, 1.01);
+  transition: 0.9s;
+}
+
+/* estilo lista menu de botones*/
+.dmLogo {
+  margin-top: 0.5em;
+  margin-left: 3.5em;
+  display: flex;
+}
+
+.listaHeader {
+  list-style-type: none;
+  justify-content: flex-end;
+  display: flex;
+  margin-right: 2em;
+  margin-top: 1em;
+  align-items: center;
+}
+.listaHeader li a {
+  display: flex;
+  margin: auto;
+  margin-right: 1.5em;
+  font-size: 1.3em;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  color: black;
+}
+
+@media screen and (max-width: 990px) {
+  .dmLogo {
+    margin-left: 1.5em;
+  }
+
+  .listaHeader {
+    justify-content: center;
+  }
+  .listaHeader li {
+    width: 90vw;
+  }
+  .listaHeader li a {
+    margin-top: 0.5em;
+    justify-content: center;
+    border: none;
+    align-self: center;
+  }
+}
+@media screen and (max-width: 789px) {
+  .dmLogo {
+    top: 0;
+    margin-bottom: 0.5em;
+    margin-right: 0;
+    align-self: flex-start;
+    width: 3em;
+    height: 3em;
+  }
+
+  .header {
+    height: 4em;
+  }
+  .header .listaHeader {
+    justify-content: center;
+  }
+  .header .listaHeader li a {
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    margin-top: 0.5em;
+  }
+}
+/* fin menu de botones */
+/*--menu mobile--*/
+@media screen and (max-width: 1060px) {
+  .dmLogo {
+    margin-left: 1.5em;
+  }
+
+  .listaHeader {
+    justify-content: center;
+  }
+  .listaHeader li a {
+    justify-content: center;
+    width: 100%;
+    border: none;
+    align-self: center;
+  }
+}
+@media screen and (max-width: 789px) {
+  .header {
+    height: 4em;
+  }
+
+  .listaHeader {
+    justify-content: center;
+  }
+  .listaHeader li a {
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    border: none;
+  }
+
+  .dmLogo {
+    top: 0;
+    margin-bottom: 0.5em;
+    margin-right: 0;
+    align-self: flex-start;
+    width: 3em;
+    height: 3em;
+  }
+}
+/* fin menu de botones */
+/*---fonts---*/
+.novedades img, .contactoForm, .grid-2, .containerRep div, .containerAcc div, .containerVeh div {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.novedades p, .tituloNovedades, .carousel-text, .contactoForm, .contenidoContacto, label, .filtroMenu, .grid-2, .grid, .containerRep div, .containerAcc div, .containerVeh div, .footer, .listaHeader li a {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+}
+
+.containerRep, .containerAcc, .containerVeh {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 0.7em;
+  grid-row-gap: 0.7em;
+  margin: 0.5em;
+  background-color: #e9ebec;
+}
+
+.novedades img:hover, .containerRep div:hover, .containerAcc div:hover, .containerVeh div:hover {
+  transform: scale(1.01, 1.01);
+  transition: 0.9s;
+}
+
+.footer {
+  background-color: #DCD9D4;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.5) 50%);
+  background-blend-mode: soft-light, screen;
+  display: flex;
+  width: 100%;
+  border-top: 0.3em solid black;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.footer div {
+  margin: 2em 2em 2em 6em;
+}
+
+.redes {
+  padding-top: 2em;
+  font-size: 1.2em;
+  text-align: left;
+}
+.redes p {
+  margin-top: 1.5em;
+}
+.redes p img {
+  width: 2em;
+  height: 2em;
+}
+
+.infoLocal {
+  text-align: center;
+}
+.infoLocal p {
+  margin-top: 1.5em;
+  font-size: 1.2em;
+}
+
+.mapa {
+  margin: auto;
+}
+.mapa iframe {
+  position: relative;
+}
+
+/*---fonts---*/
+.novedades img, .contactoForm, .grid-2, .containerRep div, .containerAcc div, .containerVeh div {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.novedades p, .tituloNovedades, .carousel-text, .contactoForm, .contenidoContacto, label, .filtroMenu, .grid-2, .grid, .containerRep div, .containerAcc div, .containerVeh div, .listaHeader li a, .footer {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+}
+
+.containerRep, .containerAcc, .containerVeh {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 0.7em;
+  grid-row-gap: 0.7em;
+  margin: 0.5em;
+  background-color: #e9ebec;
+}
+
+.novedades img:hover, .containerRep div:hover, .containerAcc div:hover, .containerVeh div:hover {
+  transform: scale(1.01, 1.01);
+  transition: 0.9s;
+}
+
+/*---fonts---*/
+.novedades img, .contactoForm, .grid-2, .containerRep div, .containerAcc div, .containerVeh div {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.novedades p, .tituloNovedades, .carousel-text, .contactoForm, .contenidoContacto, label, .filtroMenu, .grid-2, .grid, .containerRep div, .containerAcc div, .containerVeh div, .listaHeader li a, .footer {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+}
+
+.containerRep, .containerAcc, .containerVeh {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 0.7em;
+  grid-row-gap: 0.7em;
+  margin: 0.5em;
+  background-color: #e9ebec;
+}
+
+.novedades img:hover, .containerRep div:hover, .containerAcc div:hover, .containerVeh div:hover {
+  transform: scale(1.01, 1.01);
+  transition: 0.9s;
+}
+
+/*----VEHICULOS----*/
+.containerVeh div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2em;
+  align-self: center;
+  justify-self: center;
+  border: 3px solid black;
+  background-color: white;
+}
+.containerVeh img {
+  max-width: 11em;
+  max-height: 10em;
+}
+.containerVeh p {
+  background-color: darkgrey;
+  width: 100%;
+}
+
+/*--------fin vehiculos-------------*/
+/*--------Accesorios------------*/
+.containerAcc div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2em;
+  align-self: center;
+  justify-self: center;
+  border: 3px solid #f51818;
+  background-color: white;
+}
+.containerAcc img {
+  max-width: 11em;
+  max-height: 10em;
+}
+.containerAcc p {
+  background-color: #f86363;
+  width: 100%;
+}
+
+/* ---fin accesorios-----*/
+/*--------Repuestos------------*/
+.containerRep div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2em;
+  align-self: center;
+  justify-self: center;
+  border: 3px solid #4b57ff;
+  background-color: white;
+}
+.containerRep img {
+  max-width: 11em;
+  max-height: 10em;
+}
+.containerRep p {
+  background-color: #6999f1;
+  width: 100%;
+}
+
+/*----NOSOTROS---*/
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr;
+  grid-column-gap: 1.2em;
+  padding: 0.5em;
+  margin: 1.7em;
+  border-top: 2px solid black;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 2fr;
+  grid-column-gap: 1.2em;
+  padding: 0.5em;
+  margin: 1.7em;
+  border-top: 2px solid black;
+}
+
+.localImg {
+  width: 70%;
+}
+
+.item-1 {
+  text-align: left;
+}
+.item-1:hover {
+  transform: translate(10px, 20px);
+  transition: 1s;
+}
+
+.item-4 {
+  text-align: right;
+}
+.item-4:hover {
+  transform: translate(-10px, 20px);
+  transition: 1s;
+}
+
+.item-2 .item-3 {
+  align-self: center;
+  justify-self: center;
+}
+
+/* ---- filtro de categorias */
+.filtroMenu {
+  display: inline;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+label {
+  display: inline;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+/* contacto  ----*/
+.contenidoContacto {
+  background-color: silver;
+  padding-bottom: 2em;
+}
+
+.contactoForm {
+  display: block;
+  margin: auto;
+  font-size: 1.1em;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+.contactoForm div {
+  display: block;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
+.mensaje {
+  font-size: 1.3em;
+}
+
+/* ----- responsive grid --- */
+@media screen and (max-width: 1115px) {
+  .containerVeh {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .containerAcc {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .containerRep {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 760px) {
+  .containerVeh {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .containerAcc {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .containerRep {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+/*---reset css----*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*--etiquetas--*/
+.titles {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1em 0;
+  align-items: baseline;
+}
+
+/*---------------*/
+.carousel-item img {
+  margin: auto;
+  max-width: 100%;
+  max-height: 10%;
+}
+
+.carousel-text {
+  font-size: 2em;
+  color: white;
+}
+
+/*--------------------------------------------*/
+/* SECCION NOVEDADES INDEX*/
+.tituloNovedades {
+  text-align: center;
+  font-size: 2em;
+  background-color: silver;
+  margin-bottom: 1em;
+}
+
+.novedades {
+  background-image: url(assets/fondoindex.jpg);
+  background-repeat: no-repeat;
+  margin-bottom: 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0.5em;
+  /* IMAGENES DE NOVEDADES*/
+}
+.novedades p {
+  text-align: center;
+  font-size: 2em;
+  align-self: center;
+  color: black;
+  /*---animacion texto---*/
+}
+.novedades p:hover {
+  font-size: 2.5em;
+  color: red;
+  transition: 1s;
+}
+.novedades div {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr;
+  align-self: center;
+}
+.novedades img {
+  width: 350px;
+  display: grid;
+  padding: 1.2em;
+  margin: auto;
+}
+/*-----novedades responsive*/
+@media screen and (max-width: 1090px) {
+  .novedades {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 781px) {
+  .novedades {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

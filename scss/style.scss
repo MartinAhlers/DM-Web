@@ -1,0 +1,130 @@
+
+@import '_header.scss';
+@import '_footer.scss';
+@import '_variables.scss';
+@import '_contenido.scss';
+
+
+
+
+
+/*---reset css----*/
+* {
+    margin:0;
+    padding:0;
+}
+
+/*--etiquetas--*/
+.titles{
+    font-family: $roboto;
+    font-style: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding:1em 0;
+    align-items: baseline;
+    
+}
+/*---------------*/
+
+//CAROUSEL-----
+
+.carousel-item{
+	img{
+		margin: auto;
+		@include imgsize(100%,10%);
+	}
+}
+
+.carousel-text{
+	font-size: ($fsize*2);
+	@extend %fontstyle;
+	color: white;
+
+	
+	
+}
+
+//------------------------------------
+
+
+
+
+
+
+/*--------------------------------------------*/
+/* SECCION NOVEDADES INDEX*/
+
+
+
+
+
+.tituloNovedades {
+	text-align: center;
+	font-size: ($fsize*2);
+	background-color: silver;
+	margin-bottom: 1em;
+	@extend %fontstyle;
+}
+.novedades {
+	background-image: url(assets/fondoindex.jpg);
+	background-repeat: no-repeat;
+	//border: 5px solid black;
+	margin-bottom: 2em;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 0.5em;
+	p {
+		text-align: center;
+		font-size: ($fsize*2);
+		@extend %fontstyle;
+		align-self: center;
+		color: black;
+        /*---animacion texto---*/
+		&:hover {
+			font-size: 2.5em;
+			color: red;
+			transition: 1s;
+		}
+	}
+	div {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 3fr 1fr;
+		align-self: center;
+	}
+    /* IMAGENES DE NOVEDADES*/
+	img {
+		width: 350px;
+		@extend %center-content;
+		display: grid;
+		padding: 1.2em;
+		margin:auto;
+		&:hover {
+		@extend	%hoverimg;
+		}
+	}
+}
+
+
+
+/*-----novedades responsive*/
+@media screen and (max-width:1090px) {
+	.novedades {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+}
+@media screen and (max-width:781px) {
+	.novedades {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+}
+
+
+
+
