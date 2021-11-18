@@ -40,3 +40,23 @@
      position:relative;
     }
 }
+
+
+@media screen and (max-width:789px) {
+	.footer{
+
+		div{
+			margin: 1.5em auto;
+		}
+	}
+	
+	
+	.mapa {	
+	
+		  iframe{
+		   width: 320px;
+		   height: 260px;
+		  }
+	  }
+
+}

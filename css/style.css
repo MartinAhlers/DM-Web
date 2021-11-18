@@ -207,6 +207,16 @@
   position: relative;
 }
 
+@media screen and (max-width: 789px) {
+  .footer div {
+    margin: 1.5em auto;
+  }
+
+  .mapa iframe {
+    width: 320px;
+    height: 260px;
+  }
+}
 /*---fonts---*/
 .novedades img, .contactoForm, .grid-2, .containerRep div, .containerAcc div, .containerVeh div {
   align-items: center;
