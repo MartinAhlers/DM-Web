@@ -5,8 +5,10 @@
 /*----VEHICULOS----*/
 
 .containerVeh {
+	margin: 0px;
+	padding: 0.8em;
 	@extend %grid;
-	div {
+	div { 
 		display: flex;
 		flex-direction: column;
 		@extend %center-content;
@@ -33,6 +35,8 @@
 /*--------Accesorios------------*/
 
 .containerAcc {
+	margin: 0px;
+	padding: 0.8em;
 	@extend %grid;
 	div {
 		display: flex;
@@ -61,6 +65,8 @@
 /*--------Repuestos------------*/
 
 .containerRep {
+	margin: 0px;
+	padding: 0.8em;
 	@extend %grid;
 	div {
 		display: flex;

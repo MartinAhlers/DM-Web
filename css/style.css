@@ -270,6 +270,10 @@
 }
 
 /*----VEHICULOS----*/
+.containerVeh {
+  margin: 0px;
+  padding: 0.8em;
+}
 .containerVeh div {
   display: flex;
   flex-direction: column;
@@ -291,6 +295,10 @@
 
 /*--------fin vehiculos-------------*/
 /*--------Accesorios------------*/
+.containerAcc {
+  margin: 0px;
+  padding: 0.8em;
+}
 .containerAcc div {
   display: flex;
   flex-direction: column;
@@ -312,6 +320,10 @@
 
 /* ---fin accesorios-----*/
 /*--------Repuestos------------*/
+.containerRep {
+  margin: 0px;
+  padding: 0.8em;
+}
 .containerRep div {
   display: flex;
   flex-direction: column;
