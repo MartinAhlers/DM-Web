@@ -269,6 +269,24 @@
   transition: 0.9s;
 }
 
+/*-----Filtro de productos-------*/
+.filtroMenu ul {
+  display: inline-flex;
+  margin: auto;
+  list-style: none;
+}
+.filtroMenu li {
+  font-size: 1.2em;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 5px;
+}
+.filtroMenu li.active {
+  color: #dc3545;
+  font-style: bold;
+  border-bottom: 4px solid #dc3545;
+}
+
 /*----VEHICULOS----*/
 .containerVeh {
   margin: 0px;
@@ -495,7 +513,8 @@ label {
   font-family: "Roboto Condensed", sans-serif;
   font-style: bold;
   text-align: center;
-  display: flex;
+  display: block;
+  margin: auto;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;

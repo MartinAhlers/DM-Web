@@ -73,32 +73,31 @@ Service oficial de Deceleste.">
 <div class="titles">
 <h1 > Vehiculos</h1>
 
-<form class="filtroMenu">  
-    <label> Filtrar </label>  
-    <select> 
-        <option value = "Todos"> Todos
-        </option>  
-    <option value = "Motos"> Motos  
-    </option>  
-    <option value = "Bicicletas"> Bicicletas   
-    </option>  
-    <option value = "Karting"> Karting  
-    </option>  
+<ul class="filtroMenu" id="filtroBtn">  
+        
+  <li class="active" data-target = "Todos"> Todos
+     </li>  
+  <li data-target = "Motos"> Motos  
+     </li>  
+  <li data-target = "Bicicletas"> Bicicletas   
+      </li>  
+  <li data-target = "Karting"> Karting  
+      </li>  
+       
      
-    </select>  
-    </form>  
+    </ul>   
 </div>
 <!---vehiculos contenedor--->
 <div class="containerVeh">
-    <div><img src="../assets/vehiculos/aspect_960.png" alt=" Scott aspect 960"> <p>Scott Aspect 960</p> </div>
-        <div><img src="../assets/vehiculos/ASPECT_970.png" alt=" Scott aspect 970"> <p>Scott Aspect 970</p></div>
-        <div><img src="../assets/vehiculos/BACCIO-CLASSIC125.jpg" alt="baccio classic125"> <p>Baccio Classic 125</p></div>
-        <div><img src="../assets/vehiculos/Classic-F-1048x700.jpg" alt=" Baccio classic F"><p> Baccio Classic F</p> </div>
-        <div><img src="../assets/vehiculos/GS125-S-NEGRA.png" alt="GS125-S"> <p>GS 125-S</p> </div>
-        <div><img src="../assets/vehiculos/GT-BMX_CONWAY.png" alt="GT BMX CONWAY"> <p>GT BMX CONWAY</p> </div>
-        <div><img src="../assets/vehiculos/yumbo-SK125_negra.png" alt="Yumbo-SK125"> <p>YUMBO-SK125</p> </div>
-        <div><img src="../assets/vehiculos/YUMBO-TOP125-GRIS.jpg" alt="Yumbo-TOP125"> <p>YUMBO TOP125</p></div>
-        <div><img src="../assets/vehiculos/YUMBO-ECO-70-2.jpg" alt="Yumbo ECO70"> <p>YUMBO ECO70</p></div>
+        <div data-id="Bicicletas"><img src="../assets/vehiculos/aspect_960.png" alt=" Scott aspect 960"> <p>Scott Aspect 960</p> </div>
+        <div data-id="Bicicletas"><img src="../assets/vehiculos/ASPECT_970.png" alt=" Scott aspect 970"> <p>Scott Aspect 970</p></div>
+        <div data-id="Motos"><img src="../assets/vehiculos/BACCIO-CLASSIC125.jpg" alt="baccio classic125"> <p>Baccio Classic 125</p></div>
+        <div data-id="Motos"><img src="../assets/vehiculos/Classic-F-1048x700.jpg" alt=" Baccio classic F"><p> Baccio Classic F</p> </div>
+        <div data-id="Motos"><img src="../assets/vehiculos/GS125-S-NEGRA.png" alt="GS125-S"> <p>GS 125-S</p> </div>
+        <div data-id="Bicicletas"><img src="../assets/vehiculos/GT-BMX_CONWAY.png" alt="GT BMX CONWAY"> <p>GT BMX CONWAY</p> </div>
+        <div data-id="Motos"><img src="../assets/vehiculos/yumbo-SK125_negra.png" alt="Yumbo-SK125"> <p>YUMBO-SK125</p> </div>
+        <div data-id="Motos"><img src="../assets/vehiculos/YUMBO-TOP125-GRIS.jpg" alt="Yumbo-TOP125"> <p>YUMBO TOP125</p></div>
+        <div data-id="Motos"><img src="../assets/vehiculos/YUMBO-ECO-70-2.jpg" alt="Yumbo ECO70"> <p>YUMBO ECO70</p></div>
        
     
 </div>
@@ -149,7 +148,32 @@ Service oficial de Deceleste.">
 
 
 
+<!--Script Filtro de Productos-->
+<script >
+  const filtroBtn = document.querySelector("#filtroBtn").children;
+const items = document.querySelector(".containerVeh").children;
 
+for (let i = 0; i < filtroBtn.length; i++) {
+    filtroBtn[i].addEventListener("click", function () {
+        for (let j = 0; j < filtroBtn.length; j++) {
+            filtroBtn[j].classList.remove("active")
+        }
+        this.classList.add("active");
+        const target = this.getAttribute("data-target")
+   
+        for (let k = 0; k < items.length; k++) {
+            items[k].style.display = "none";
+            if (target == items[k].getAttribute("data-id")) {
+                items[k].style.display = "block";
+            }
+            if (target == "Todos") {
+                items[k].style.display = "block";
+            }
+        }
+   
+    })
+}
+</script>
 <!--Script bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

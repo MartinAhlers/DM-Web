@@ -31,7 +31,7 @@ Service oficial de Deceleste.">
 
 <!--Titulo pestaña-->
  <title>Daghero Motors | Accesorios Tienda Online</title>
-  
+ 
 </head>
 <body>
   <header>
@@ -67,36 +67,36 @@ Service oficial de Deceleste.">
   </header>
  <!--- contenido de pagina accesorios-->
  <div class="contenidoAccesorios">
-    <div class="titles">
+  <div class="titles">
     <h1> Accesorios</h1>
-    <form class="filtroMenu">  
-        <label> Filtrar </label>  
-        <select> 
-            <option value = "Todos"> Todos
-            </option>  
-        <option value = "Motos"> Motos  
-        </option>  
-        <option value = "Bicicletas"> Bicicletas   
-        </option>  
-        <option value = "Karting"> Karting  
-        </option>  
+ 
+   <ul class="filtroMenu" id="filtroBtn">  
+        
+    <li class="active" data-target = "Todos"> Todos
+       </li>  
+    <li data-target = "Motos"> Motos  
+       </li>  
+    <li data-target = "Bicicletas"> Bicicletas   
+        </li>  
+    <li data-target = "Karting"> Karting  
+        </li>  
          
-        </select>  
-        </form>  
+       
+      </ul>  
     
-
-    </div>
+      </div>
+    
 <!-- accesorios  contenedor-->
     <div class="containerAcc">
-        <div><img src="../assets/accesorios/baul-moto.webp" alt="baul moto"> <p>Baul Motocicleta</p> </div>
-        <div><img src="../assets/accesorios/CascoCrossRush.png" alt="casco cross rush"> <p>Casco RUSH Cross</p></div>
-        <div><img src="../assets/accesorios/Cross-blanco-azul.jpg" alt="cross blanco rush"> <p>Casco RUSH Cross</p></div>
-        <div><img src="../assets/accesorios/fundaparamoto.jpg" alt="funda moto"><p>Funda Motocicleta</p> </div>
-        <div><img src="../assets/accesorios/guantes-tacticos-moto.webp" alt="guantes moto"> <p>Guantes Tacticos Moto</p> </div>
-        <div><img src="../assets/accesorios/guantesdeabrigo.jpg" alt="Guantes abrigo"> <p>Guantes de Abrigo</p> </div>
-        <div><img src="../assets/accesorios/mascara-tapaboca.webp" alt="mascara tapaboca"> <p>Mascara Tapaboca</p> </div>
-        <div><img src="../assets/accesorios/RUSH-NEGRO-ROJO.png" alt="casco rush negro"> <p>Casco RUSH Integral</p></div>
-        <div><img src="../assets/accesorios/tranca.jpg" alt="tranca moto"> <p>Tranca para Moto</p></div>
+        <div data-id="Motos"><img src="../assets/accesorios/baul-moto.webp" alt="baul moto"> <p>Baul Motocicleta</p> </div>
+        <div data-id="Motos"><img src="../assets/accesorios/CascoCrossRush.png" alt="casco cross rush"> <p>Casco RUSH Cross</p></div>
+        <div data-id="Motos"><img src="../assets/accesorios/Cross-blanco-azul.jpg" alt="cross blanco rush"> <p>Casco RUSH Cross</p></div>
+        <div data-id="Motos"><img src="../assets/accesorios/fundaparamoto.jpg" alt="funda moto"><p>Funda Motocicleta</p> </div>
+        <div data-id="Motos"><img src="../assets/accesorios/guantes-tacticos-moto.webp" alt="guantes moto"> <p>Guantes Tacticos Moto</p> </div>
+        <div data-id="Motos"><img src="../assets/accesorios/guantesdeabrigo.jpg" alt="Guantes abrigo"> <p>Guantes de Abrigo</p> </div>
+        <div data-id="Motos"><img src="../assets/accesorios/mascara-tapaboca.webp" alt="mascara tapaboca"> <p>Mascara Tapaboca</p> </div>
+        <div data-id="Motos"><img src="../assets/accesorios/RUSH-NEGRO-ROJO.png" alt="casco rush negro"> <p>Casco RUSH Integral</p></div>
+        <div data-id="Bicicletas"><img src="../assets/accesorios/tranca.jpg" alt="tranca bici"> <p>Tranca para Bici</p></div>
         
     </div>
     
@@ -139,7 +139,33 @@ Service oficial de Deceleste.">
     </footer>
 
 
-<!--Script bootstrap-->
+<!--Script Filtro de Productos-->
+<script >
+  const filtroBtn = document.querySelector("#filtroBtn").children;
+const items = document.querySelector(".containerAcc").children;
+
+for (let i = 0; i < filtroBtn.length; i++) {
+    filtroBtn[i].addEventListener("click", function () {
+        for (let j = 0; j < filtroBtn.length; j++) {
+            filtroBtn[j].classList.remove("active")
+        }
+        this.classList.add("active");
+        const target = this.getAttribute("data-target")
+   
+        for (let k = 0; k < items.length; k++) {
+            items[k].style.display = "none";
+            if (target == items[k].getAttribute("data-id")) {
+                items[k].style.display = "block";
+            }
+            if (target == "Todos") {
+                items[k].style.display = "block";
+            }
+        }
+   
+    })
+}
+</script>
+<!--Script Bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
