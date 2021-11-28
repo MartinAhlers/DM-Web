@@ -8,34 +8,41 @@
 	margin: 0px;
 	padding: 0.8em;
 	@extend %grid;
-	div { 
+	div {
 		display: flex;
 		flex-direction: column;
 		@extend %center-content;
 		text-align: center;
 		font-size: 2em;
-		@extend %fontstyle;
 		align-self: center;
 		justify-self: center;
-		border: 3px solid black;
+		border:0.5px solid gray;
 		background-color: white;
+		box-shadow: 10px 5px 10px rgb(158, 145, 145);
 		&:hover {
 			@extend %hoverimg;
 		}
-	}
+	
 	img {
-		@include imgsize(11em,10em);
+		@include imgsize(280px,300px);
 	}
 	p {
-		background-color: darkgrey;
+		background-color: #dc3545;
 		width: 100%;
+		margin-bottom:0;
+		height: 80px;
+		font-size: 0.8em;
+		font-style: bold;
+		font-family: $roboto;
+		align-content: flex-start;
+		text-align:start;
+		
+
 	}
+}
 }
 /*--------fin vehiculos-------------*/
 /*--------Accesorios------------*/
-
-.contenidoAccesorios{
-
 
 .containerAcc {
 	margin: 0px;
@@ -47,25 +54,32 @@
 		@extend %center-content;
 		text-align: center;
 		font-size: 2em;
-		@extend %fontstyle;
 		align-self: center;
 		justify-self: center;
-		border: 3px solid rgb(245, 24, 24);
+		border:0.5px solid gray;
 		background-color: white;
+		box-shadow: 10px 5px 10px rgb(158, 145, 145);
 		&:hover {
 			@extend %hoverimg;
 		}
-	}
+	
 	img {
-		@include imgsize(11em,10em);
+		@include imgsize(280px,300px);
 	}
 	p {
-		background-color: rgb(248, 99, 99);
+		background-color: #dc3545;
 		width: 100%;
+		margin-bottom:0;
+		height: 80px;
+		font-size: 0.8em;
+		font-style: bold;
+		font-family: $roboto;
+		align-content: flex-start;
+		text-align:start;
+		
+
 	}
 }
-
-
 }
 /* ---fin accesorios-----*/
 /*--------Repuestos------------*/
@@ -80,22 +94,32 @@
 		@extend %center-content;
 		text-align: center;
 		font-size: 2em;
-		@extend %fontstyle;
 		align-self: center;
 		justify-self: center;
-		border: 3px solid rgb(75, 87, 255);
+		border:0.5px solid gray;
 		background-color: white;
+		box-shadow: 10px 5px 10px rgb(158, 145, 145);
 		&:hover {
 			@extend %hoverimg;
 		}
-	}
+	
 	img {
-		@include imgsize(11em,10em);
+		@include imgsize(280px,300px);
 	}
 	p {
-		background-color: rgb(105, 153, 241);
+		background-color: #dc3545;
 		width: 100%;
+		margin-bottom:0;
+		height: 80px;
+		font-size: 0.8em;
+		font-style: bold;
+		font-family: $roboto;
+		align-content: flex-start;
+		text-align:start;
+		
+
 	}
+}
 }
 
 
