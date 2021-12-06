@@ -88,7 +88,7 @@ Service oficial de Deceleste.">
     </ul>   
 </div>
 <!---vehiculos contenedor--->
-<div class="containerVeh">
+<div class="containers">
         <div data-id="Bicicletas"><img src="../assets/vehiculos/aspect_960.png" alt=" Scott aspect 960"> <p>Scott Aspect 960</p> </div>
         <div data-id="Bicicletas"><img src="../assets/vehiculos/ASPECT_970.png" alt=" Scott aspect 970"> <p>Scott Aspect 970</p></div>
         <div data-id="Motos"><img src="../assets/vehiculos/BACCIO-CLASSIC125.jpg" alt="baccio classic125"> <p>Baccio Classic 125</p></div>
@@ -149,31 +149,7 @@ Service oficial de Deceleste.">
 
 
 <!--Script Filtro de Productos-->
-<script >
-  const filtroBtn = document.querySelector("#filtroBtn").children;
-const items = document.querySelector(".containerVeh").children;
-
-for (let i = 0; i < filtroBtn.length; i++) {
-    filtroBtn[i].addEventListener("click", function () {
-        for (let j = 0; j < filtroBtn.length; j++) {
-            filtroBtn[j].classList.remove("active")
-        }
-        this.classList.add("active");
-        const target = this.getAttribute("data-target")
-   
-        for (let k = 0; k < items.length; k++) {
-            items[k].style.display = "none";
-            if (target == items[k].getAttribute("data-id")) {
-                items[k].style.display = "block";
-            }
-            if (target == "Todos") {
-                items[k].style.display = "block";
-            }
-        }
-   
-    })
-}
-</script>
+<script src="../script.js"></script>
 <!--Script bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

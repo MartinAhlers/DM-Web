@@ -29,12 +29,13 @@ $fsize:1em;
 
 // forma de grid productos 
 %grid{
+	
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
 	grid-column-gap: 0.7em;
 	grid-row-gap: 0.7em;
-	margin: 0.5em;
+	margin: 0;
 	background-color: rgb(233, 235, 236);
 }
 // hover imagenes

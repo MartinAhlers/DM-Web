@@ -28,9 +28,10 @@
 
 
 
-/*----VEHICULOS----*/
 
-.containerVeh {
+/*--------Contenedores de Productos------------*/
+
+.containers {
 	margin: 0px;
 	padding: 0.8em;
 	@extend %grid;
@@ -67,87 +68,6 @@
 	}
 }
 }
-/*--------fin vehiculos-------------*/
-/*--------Accesorios------------*/
-
-.containerAcc {
-	margin: 0px;
-	padding: 0.8em;
-	@extend %grid;
-	div {
-		display: flex;
-		flex-direction: column;
-		@extend %center-content;
-		text-align: center;
-		font-size: 2em;
-		align-self: center;
-		justify-self: center;
-		border:0.5px solid gray;
-		background-color: white;
-		box-shadow: 10px 5px 10px rgb(158, 145, 145);
-		&:hover {
-			@extend %hoverimg;
-		}
-	
-	img {
-		@include imgsize(280px,300px);
-	}
-	p {
-		background-color: #dc3545;
-		width: 100%;
-		margin-bottom:0;
-		height: 80px;
-		font-size: 0.8em;
-		font-style: bold;
-		font-family: $roboto;
-		align-content: flex-start;
-		text-align:start;
-		
-
-	}
-}
-}
-/* ---fin accesorios-----*/
-/*--------Repuestos------------*/
-
-.containerRep {
-	margin: 0px;
-	padding: 0.8em;
-	@extend %grid;
-	div {
-		display: flex;
-		flex-direction: column;
-		@extend %center-content;
-		text-align: center;
-		font-size: 2em;
-		align-self: center;
-		justify-self: center;
-		border:0.5px solid gray;
-		background-color: white;
-		box-shadow: 10px 5px 10px rgb(158, 145, 145);
-		&:hover {
-			@extend %hoverimg;
-		}
-	
-	img {
-		@include imgsize(280px,300px);
-	}
-	p {
-		background-color: #dc3545;
-		width: 100%;
-		margin-bottom:0;
-		height: 80px;
-		font-size: 0.8em;
-		font-style: bold;
-		font-family: $roboto;
-		align-content: flex-start;
-		text-align:start;
-		
-
-	}
-}
-}
-
 
 /*----NOSOTROS---*/
 .grid {
@@ -197,21 +117,8 @@
 	}
 }
 
-/* ---- filtro de categorias */
-.filtroMenu {
-	@extend %fontstyle;
-	display: inline;
-	margin-left: 1em;
-	margin-bottom: 1em;
-}
-label {
-	@extend %fontstyle;
-	display: inline;
-	margin-left: 1em;
-	margin-bottom: 1em;
-}
 
-/* contacto  ----*/
+/*-------- contacto  ----*/
 .contenidoContacto {
 	background-color: silver;
 	padding-bottom: 2em;
@@ -241,30 +148,16 @@ label {
 /* ----- responsive grid --- */
 
 @media screen and (max-width:1115px) {
-	.containerVeh {
+	.containers {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr 1fr;
 	}
-	.containerAcc {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
-	}
-	.containerRep {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
-	}
+	
 }
 @media screen and (max-width:760px) {
-	.containerVeh {
+	.containers {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	}
-	.containerAcc {
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	}
-	.containerRep {
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	}
+
 }
