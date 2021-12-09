@@ -29,7 +29,7 @@ function validate() {
         
         sendmail(name.value, email.value, asunto.value, msg.value);
         success();
-        
+        clearform();
       }
     });
   }
@@ -68,4 +68,19 @@ function validate() {
     });
   }
   
-  
+function clearform(){
+    let name = document.querySelector("#nombre");
+    let email = document.querySelector("#correo");
+    let asunto = document.querySelector("#asunto");
+    let msg = document.querySelector("#mensaje");
+   
+
+
+
+    name.value ="";
+    email.value ="";
+    asunto.value ="";
+    msg.value ="";
+    
+
+}
