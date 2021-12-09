@@ -23,3 +23,9 @@ for (let i = 0; i < filtroBtn.length; i++) {
         }
    
     }) }
+
+
+
+
+     
+ 

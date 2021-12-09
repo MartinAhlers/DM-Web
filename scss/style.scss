@@ -84,12 +84,11 @@
 		@extend %fontstyle;
 		align-self: center;
 		color: black;
-        /*---animacion texto---*/
-		&:hover {
-			font-size: 2.5em;
+
+		span{
 			color: red;
-			transition: 1s;
 		}
+      
 	}
 	div {
 		display: grid;
@@ -104,9 +103,7 @@
 		display: grid;
 		padding: 1.2em;
 		margin:auto;
-		&:hover {
-		@extend	%hoverimg;
-		}
+		
 	}
 }
 

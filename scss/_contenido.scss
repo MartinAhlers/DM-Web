@@ -36,6 +36,7 @@
 	padding: 0.8em;
 	@extend %grid;
 	div {
+		
 		display: flex;
 		flex-direction: column;
 		@extend %center-content;
@@ -52,8 +53,10 @@
 	
 	img {
 		@include imgsize(280px,300px);
+		
 	}
 	p {
+		
 		background-color: #dc3545;
 		width: 100%;
 		margin-bottom:0;
@@ -158,6 +161,17 @@
 	.containers {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+
+	.grid{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		
+	}
+	.grid-2{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		
 	}
 
 }

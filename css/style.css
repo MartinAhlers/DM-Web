@@ -24,7 +24,7 @@
   background-color: #e9ebec;
 }
 
-.novedades img:hover, .containers div:hover {
+.containers div:hover {
   transform: scale(1.01, 1.01);
   transition: 0.9s;
 }
@@ -160,7 +160,7 @@
   background-color: #e9ebec;
 }
 
-.novedades img:hover, .containers div:hover {
+.containers div:hover {
   transform: scale(1.01, 1.01);
   transition: 0.9s;
 }
@@ -237,7 +237,7 @@
   background-color: #e9ebec;
 }
 
-.novedades img:hover, .containers div:hover {
+.containers div:hover {
   transform: scale(1.01, 1.01);
   transition: 0.9s;
 }
@@ -264,7 +264,7 @@
   background-color: #e9ebec;
 }
 
-.novedades img:hover, .containers div:hover {
+.containers div:hover {
   transform: scale(1.01, 1.01);
   transition: 0.9s;
 }
@@ -402,6 +402,16 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 /*---reset css----*/
 * {
@@ -459,12 +469,9 @@
   font-size: 2em;
   align-self: center;
   color: black;
-  /*---animacion texto---*/
 }
-.novedades p:hover {
-  font-size: 2.5em;
+.novedades p span {
   color: red;
-  transition: 1s;
 }
 .novedades div {
   display: grid;
@@ -478,6 +485,7 @@
   padding: 1.2em;
   margin: auto;
 }
+
 /*-----novedades responsive*/
 @media screen and (max-width: 1090px) {
   .novedades {
