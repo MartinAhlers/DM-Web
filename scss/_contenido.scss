@@ -66,7 +66,13 @@
 		font-family: $roboto;
 		align-content: flex-start;
 		text-align:start;
+		span{
+			margin-left: 57%;
+			font-size: 1.2em;
+		    font-family: $roboto;
 		
+		
+		}
 
 	}
 }
